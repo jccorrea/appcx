@@ -1,0 +1,8 @@
+<% if logged_in? %>
+	<a href="<%= logout_path %>"><span>Logout</span></a>
+<% else %>
+	<ul>
+		<li><a href="<%= signup_path %>"><span>Sign-Up</span></a></li>
+		<li><a href="<%= login_path %>"><span>Login</span></a></li>
+	</ul>
+<% end %>

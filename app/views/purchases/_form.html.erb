@@ -1,0 +1,17 @@
+<%= simple_form_for(@purchase) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :date , :start_year => 2005 %>
+    <%= f.association :supplier %>
+    <%= f.input :item_id %>
+    <%= f.input :item_price %>
+    <%= f.input :quantity , :within => 1..1.0/0 %>
+    <%= f.input :info %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+

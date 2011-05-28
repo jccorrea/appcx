@@ -1,0 +1,27 @@
+<div id="banner"> 
+<br />
+  <h4>Login</h4>
+<br />
+<!--  <p>  Ainda não tem uma conta?Você pode criá-la <%= link_to 'aqui', signup_path %> -->
+  </p>
+</div>
+
+<%= form_tag gohampstergo_path do %>
+
+	<p>
+	  <label for="email" class="required">E-mail</label>
+    <%= text_field_tag :email, params[:email], 
+                       :class => 'large textbox', :size => 30 %>
+	</p>
+	
+	<p>
+	  <label for="password" class="required">Senha</label>
+	  <%= password_field_tag :password, params[:password],
+	                         :class => 'large textbox', :size => 30 %>
+	</p>
+	
+	<div class="actions">
+    	<%= submit_tag 'Log in', :class => 'button' %>
+  	</div>
+  	
+<% end %>

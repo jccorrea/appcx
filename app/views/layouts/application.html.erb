@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CXAPP</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+
+<body>
+
+	<%= render 'shared/flash_notice' %>
+
+	<header>
+	<!--	<h1><%= link_to 'Simple Login Application', home_index_path%></h1> -->
+		<%= render 'shared/membership_login_links' %>
+	</header>
+
+	<section>
+		<% if logged_in? %>
+			<%= render 'shared/user_layout' %>
+		<% else %>
+			<%= render 'shared/guest_layout' %>
+		<% end %>
+	</section>
+
+</body>
+
+</html>
+

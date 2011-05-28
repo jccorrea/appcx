@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @sale.date %>
+</p>
+
+<p>
+  <b>Salesman:</b>
+  <%= @sale.salesman_id %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @sale.customer_id %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @sale.product_id %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @sale.quantity %>
+</p>
+
+<p>
+  <b>Unit price:</b>
+  <%= @sale.unit_price %>
+</p>
+
+<p>
+  <b>Total sale:</b>
+  <%= @sale.total_sale %>
+</p>
+
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>

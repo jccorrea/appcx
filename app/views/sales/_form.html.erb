@@ -1,0 +1,18 @@
+<%= simple_form_for(@sale) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :date %>
+    <%= f.association :salesman %>
+    <%= f.association :customer %>
+    <%= f.association :product_id %>
+    <%= f.input :quantity %>
+    <%= f.input :unit_price %>
+    <%= f.input :total_sale %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+

@@ -1,0 +1,17 @@
+<%= simple_form_for(@salesman) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :age , :start_year => 1945%>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <%= f.input :cellphone %>
+    <%= f.association :city %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+

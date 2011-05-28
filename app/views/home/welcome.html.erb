@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CXAPP</title>
+<h4 class=textcenter>Olá, <%= current_user.username %></h4>
+
+<p class=textcenter>Você está logado na CXAPP.</p>
+</head>
+<body>
+<div class=infuser>
+<%= link_to 'Ver meu perfil', user_path(@user) %>
+</div>
+<br />
+<div class=menuapp>
+<%= link_to 'Fornecedores',suppliers_path(@fornecedor) %>
+</div>
+<br />
+<%= link_to 'Compras',purchases_path(@compra)%>
+</body>
+</html>
+

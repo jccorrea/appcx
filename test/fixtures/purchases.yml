@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 
+  supplier_id: 1
+  item_id: 1
+  item_price: 9.99
+  info: MyText
+
+two:
+  date: 
+  supplier_id: 1
+  item_id: 1
+  item_price: 9.99
+  info: MyText

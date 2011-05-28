@@ -1,0 +1,33 @@
+<h1>Listing salesmen</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Cellphone</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @salesmen.each do |salesman| %>
+  <tr>
+    <td><%= salesman.name %></td>
+    <td><%= salesman.age %></td>
+    <td><%= salesman.email %></td>
+    <td><%= salesman.phone %></td>
+    <td><%= salesman.cellphone %></td>
+    <td><%= salesman.city_id %></td>
+    <td><%= link_to 'Show', salesman %></td>
+    <td><%= link_to 'Edit', edit_salesman_path(salesman) %></td>
+    <td><%= link_to 'Destroy', salesman, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Salesman', new_salesman_path %>
